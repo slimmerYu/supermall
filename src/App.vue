@@ -4,11 +4,13 @@
  * @Author: slimmerYu
  * @Date: 2020-07-31 08:53:45
  * @LastEditors: slimmerYu
- * @LastEditTime: 2020-07-31 09:23:07
+ * @LastEditTime: 2020-08-09 20:02:47
 --> 
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive exclude="Detail">
+      <router-view/>
+    </keep-alive>
     <main-tab-bar/>
   </div>
 </template>

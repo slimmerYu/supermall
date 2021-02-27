@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @version: 
+ * @Author: slimmerYu
+ * @Date: 2020-07-31 08:53:45
+ * @LastEditors: slimmerYu
+ * @LastEditTime: 2020-08-06 22:01:27
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -5,6 +13,7 @@ const Home = () => import('../views/home/Home')
 const Category = () => import('../views/category/Category')
 const Cart = () => import('../views/cart/Cart')
 const Profile = () => import('../views/profile/Profile')
+const Detail = () => import('../views/detail/Detail')
 
 
 Vue.use(VueRouter)
@@ -29,12 +38,15 @@ Vue.use(VueRouter)
     {
       path: '/profile',
       component: Profile
+    },
+    {
+      path: '/detail/:iid',
+      component: Detail
     }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 

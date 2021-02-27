@@ -4,12 +4,12 @@
  * @Author: slimmerYu
  * @Date: 2020-07-31 09:17:11
  * @LastEditors: slimmerYu
- * @LastEditTime: 2020-07-31 09:40:02
+ * @LastEditTime: 2020-08-01 14:45:55
 --> 
 <template>
   <tab-bar>
     <tab-bar-item path="/home">
-      <img slot="item-icon" src="../../../assets/img/tabbar/home.svg" alt="">
+      <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt="">
       <img slot="item-icon-active" src="../../../assets/img/tabbar/home_active.svg" alt="">
       <div slot="item-text">首页</div>
     </tab-bar-item>
